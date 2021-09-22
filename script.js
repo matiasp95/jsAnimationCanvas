@@ -2,12 +2,12 @@
 
 //Function to convert image to base64 inspired from HaNdTriX/image_to_data_url.js
 
-console.log("Its working");
+
 function getBase64ImageFromPngUrl (src){
 
     //Create an Image object
     var myImage = new Image();
-
+console.log("G");
     //Variable to be returned
     var dataURL;
 
@@ -44,15 +44,16 @@ const selectedImage = new Image();
 
 document.getElementById("btn1").onclick = function() {
 
-
-selectedImage.src = getBase64ImageFromPngUrl('https://cdn.pixabay.com/photo/2017/09/28/14/53/figure-2795793_960_720.png');
+//console.log(document.getElementById("text1").value);
+selectedImage.src = document.getElementById("text1").value;
+console.log(selectedImage.src);
+};
+/*selectedImage.src = getBase64ImageFromPngUrl('https://cdn.pixabay.com/photo/2017/09/28/14/53/figure-2795793_960_720.png');
 
 let root = document.documentElement;
 
 root.style.setProperty('--width-var', selectedImage.naturalWidth + " px");
-root.style.setProperty('--height-var', selectedImage.naturalHeight + " px");
-};
-
+root.style.setProperty('--height-var', selectedImage.naturalHeight + " px");*/
 
 selectedImage.onload = function(){
 
