@@ -37,8 +37,10 @@ function getBase64ImageFromPngUrl (src){
 
     //Return the data url
     return dataURL;
+
 }
-const selectedImage  = new Image();
+document.getElementById("myBtn").onclick = function() {
+	const selectedImage  = new Image();
 
 selectedImage.src = getBase64ImageFromPngUrl('https://cdn.pixabay.com/photo/2017/09/28/14/53/figure-2795793_960_720.png');
 
@@ -46,6 +48,8 @@ let root = document.documentElement;
 
 root.style.setProperty('--width-var', selectedImage.naturalWidth + " px");
 root.style.setProperty('--height-var', selectedImage.naturalHeight + " px");
+};
+
 
 selectedImage.onload = function(){
 
