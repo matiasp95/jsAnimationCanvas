@@ -40,10 +40,10 @@ function getBase64ImageFromPngUrl (src){
 
 }
 
-const selectedImage;
+const selectedImage = new Image();
 
 document.getElementById("btn1").onclick = function() {
-	selectedImage  = new Image();
+
 
 selectedImage.src = getBase64ImageFromPngUrl('https://cdn.pixabay.com/photo/2017/09/28/14/53/figure-2795793_960_720.png');
 
