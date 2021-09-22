@@ -6,6 +6,10 @@
 
 }
 
+#btn1, #text1{
+background: white;
+}
+
 #canvas1 { 
     border: 2px solid white;
     position: absolute;
