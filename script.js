@@ -69,7 +69,7 @@ selectedImage.onload = function(){
     ctx.clearRect(0,0,myCanvas.width,myCanvas.height);
 
     let particlesArray = [];
-    const numberOfParticles = 7000;
+    const numberOfParticles = 12000;
 
     let mappedImage = [];
     for (let y = 0; y < myCanvas.height; y++){
