@@ -1,6 +1,8 @@
 //TODO Comment some lines to give better understanding of what is going on
 
 //Function to convert image to base64 inspired from HaNdTriX/image_to_data_url.js
+
+console.log("Its working");
 function getBase64ImageFromPngUrl (src){
 
     //Create an Image object
