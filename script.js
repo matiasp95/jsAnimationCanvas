@@ -112,9 +112,14 @@ selectedImage.onload = function(){
             let movement = (2.5 - this.speed ) + this.velocity;
 
             this.y += movement;
+		this.x +=movement;
             if(this.y >= myCanvas.height){
                 this.y = 0;
                 this.x = Math.random() * myCanvas.width;
+            }
+		if(this.x >= myCanvas.width){
+                this.x = 0;
+                this.y = Math.random() * myCanvas.height;
             }
         }
         draw(){
